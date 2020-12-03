@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@drawable/fondo">
+
+    <Button
+        android:id="@+id/bCoche"
+        android:layout_width="85dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="476dp"
+        android:background="@drawable/redondeado"
+        android:drawableTop="@drawable/coche"
+        android:onClick="coche"
+        android:text="Ir en Coche"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTexto" />
+
+    <EditText
+        android:id="@+id/etTexto"
+        android:layout_width="230dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/redondeado"
+        android:ems="10"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bBici"
+        android:layout_width="85dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="476dp"
+        android:background="@drawable/redondeado"
+        android:drawableTop="@drawable/bicicleta"
+        android:onClick="bici"
+        android:text="Ir en Bici"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/bCoche"
+        app:layout_constraintTop_toBottomOf="@+id/etTexto" />
+
+    <Button
+        android:id="@+id/bLocalizar"
+        android:layout_width="85dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="476dp"
+        android:background="@drawable/redondeado"
+        android:drawableTop="@drawable/localizar"
+        android:onClick="mapas"
+        android:text="Localizar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/bAndando"
+        app:layout_constraintTop_toBottomOf="@+id/etTexto" />
+
+    <Button
+        android:id="@+id/bAndando"
+        android:layout_width="85dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="476dp"
+        android:background="@drawable/redondeado"
+        android:drawableTop="@drawable/caminar"
+        android:onClick="andando"
+        android:text="Ir Andando"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/bBici"
+        app:layout_constraintTop_toBottomOf="@+id/etTexto" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="73dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/redondeado"
+        android:onClick="micro"
+        app:layout_constraintStart_toEndOf="@+id/etTexto"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/microfono" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="12dp"
+        android:text="Introduce el lugar a buscar : "
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
